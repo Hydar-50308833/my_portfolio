@@ -1,0 +1,8 @@
+Microsoft Windows [Version 10.0.22000.556]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mailm\flask_website\env\Scripts>activate
+
+(env) C:\Users\mailm\flask_website\env\Scripts>cd C:\Networking
+
+(env) C:\Networking>flask run

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>HTML Project</title>
+
+	<style>
+		.button {
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		
+		.button1 {background-color: #4CAF50;} /* Green */
+		</style>
+
+</head>
+
+<body>
+<style>
+body {
+background-image: url('/Y:/Sem-1/Networking-1/Project _1/Pro_files/Images/BackGround.gif');
+}
+</style>
+	<!--Header(start)-->
+	<table id="header" border="5" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#bed7eb">
+		<tr>
+			<td>
+				<table border="0" cellpadding="0"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td>
+							
+
+						</td>
+
+						<td>
+							<font face="Comic sans MS" size="6">
+								<b>My Portfolio</b>
+							</font>
+						</td>
+
+						<td width="10%">
+							
+						</td>
+
+						<td>
+							<a href="#home" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Home
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#about" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									About Me
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#projects" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Projects
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#achievements" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Achievements
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#contact" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Get in touch
+								</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+
+	<!--Home(start)-->
+	<table id="home" border="5" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="5"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td align="center" valign="middle">
+							<h3>
+								<font face="Times New Roman"
+									size="6" color="#faf9f7">
+									I'm "Hydar Hussain"
+								</font>
+							</h3>
+
+							<h2>
+								<font face="Verdana" size="6"
+									color="#ffffff">
+									<Freelance Programmer>
+								</font>
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Home(end)-->
+
+
+	<!--About(start)-->
+	<table id="about" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#e3c4a8">
+		<tr>
+			<td>
+				<table border="0" cellpadding="5"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="#black">
+								About Me
+							</font>
+							<hr color="#black" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td width="40%">
+							<img src="/Y:/Sem-1/Networking-1/Project _1/Pro_files/Images/My Pic.gif" alt="Profile Pic" style="width:400px;height:450px;">
+						</td>
+
+						<td width="60%">
+							<font face="Verdana" size="4"
+								color="black">
+								Thanks for your interest, here
+								is a quick story of me and this
+								website.
+								<hr color="green">
+								I'm Hydar Hussain from Hyderabad, India.
+								I have 3 years of experience as a automation 
+								Quality Engineer. I have completed my graduation in 
+								2017 from JNTU college of engineering Hyderabad.
+						        <hr color="green">
+
+								I have worked with Cognizant Technologies Pvt.Ltd & Mindtree Ltd 
+								companies in health-care bussiness and E-Commerce domains.
+								Besides my career, I like to play outdoor games and hang-out with my friends.
+								<hr color="green">
+
+								This website is basically a Web Development 
+								project of Networking-1 course, which is
+								built using HTML only. This web page displays information
+								about me and the projects I have done and my contact details.
+								
+
+								Thanks again for visiting my page....
+								
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+
+	<!--Projects(start)-->
+	<table id="projects" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="black">
+								Projects
+							</font>
+							<hr color="black" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td height="10">
+							<font face="Times New Roman"
+								size="5" color="black">
+								<ul>
+									{% for project in plist %}
+									<li class="pro_name" style="font-style: italic;">
+										<hr color="#c2c0c3">
+										{{ project.pro_name }}
+										<ul>
+											<li class="pro_desc">
+												<hr color="##4c3cbf">
+												{{ project.pro_desc }}
+											</li>
+										</ul>
+									</li>
+									{% endfor %}
+								</ul>
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+							</font>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<form method="get" action="/form" target="_blank">
+						<button class="button button1">Add new Project</button>
+					        </form>
+					    </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Projects(end)-->
+
+	<!--Achievement(start)-->
+	<table id="achievements" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle">
+							<font face="Verdana" size="7" color="#4CAF50">
+								Achievements
+								<hr color="#4CAF50" width="100">
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="white">
+								<ul>
+									<li>
+										<b>Intern at Knoah Technologies</b>
+										<ul>
+											<li>
+												July-2017 - March-2018
+											</li>
+											<li>
+												Learnt about the different tools and programming methodologies.
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<hr color="black">
+										<hr color="black">
+										<hr color="black">
+										<b>Quality Analyst at Cognizant Technology Solutions</b>
+										<ul>
+											<li>
+												April-2018 - December-2020
+											</li>
+											<li>
+												Experience in managing critical projects 
+												from requirement phase to closure stage.
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<hr color="black">
+										<hr color="black">
+										<hr color="black">
+										<b>Automation Engineer at Mindtree</b>
+										<ul>
+											<li>
+												December-2020 - January-2022
+											</li>
+											<li>
+												Enhanced the team’s performance by automating 
+											    the testing methodologies using the
+                                                Selenium IDE and Selenium Web driver.
+											</li>
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+										</ul>
+									</li>
+
+								</ul>
+
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Achievement(end)-->
+
+
+	<!--Contact(start)-->
+	<table id="contact" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="black">
+								Get in touch:
+							</font>
+							<hr color="black" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" width="50%" cellpadding="15"
+								cellspacing="0" align="center" bgcolor="black">
+								<tr>
+									<td width="30%">
+										<hr color="black">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Name:
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input type="text" size="40">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Email:
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input type="email" size="40">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Contact # :
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input type="number" size="12">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Message:
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<textarea rows="5"
+												cols="37">
+											</textarea>
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										
+									</td>
+									<td width="70%">
+										<button type="Submit">
+											<font face="Verdana"
+												size="4" color="black">
+												<b>Submit</b>
+											</font>
+										</button>
+										<hr color="black">
+										<hr color="black">
+									</td>
+								</tr>
+							</table>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="2">
+							
+							
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Contact(end)-->
+
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="13%" valign="top">
+							<b>LinkedIn</b>
+							<a href="https://www.linkedin.com/in/hydar-hussain-94bb22128/" target="_blank" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Email</b>
+							<a href="mailto:gshydarhussain@gmail.com" target="_blank" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Github</b>
+							<a href="https://github.com/Hydar-50308833" target="_blank" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td width="10%">
+							<font face="arial" color="black" size="5">
+								<a href="#header" style="text-decoration:none">
+									<font face="Verdana" color="#4CAF50" size="6">
+										<b>TOP</b>
+									</font>
+								</a>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
